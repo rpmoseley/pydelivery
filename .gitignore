@@ -102,3 +102,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Omit the scripts to invoke the coverage command
+run-coverage
+rep-coverage

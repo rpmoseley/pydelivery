@@ -1,0 +1,40 @@
+#
+# This file describes the delivery for round 05. It should be processed by the program
+# parseround to generate the SQL for the database. It has been modified to serve as a 
+# suitable input to the test suite and contains some items that would not usually occur
+# within a valid input file.
+#
+Round05 = RoundInfo(5, 'Low Road/Long Meadows', houses = [
+  HouseInfo(5, 'Wick Lane', [PaperInfo('Sun', '1234567'), PaperInfo('Star', '123456'), HasStandard]),
+  HouseInfo(6, 'Hall Lane', [PaperInfo('Mail', '1234567'), HasStandard2]),
+  HouseInfo('New Bungalow', 'Hall Lane', [PaperInfo('Sun', '123456'), PaperInfo('Mail', '7'), HasStandard]),
+  HouseInfo('Olde Barn', 'Hall Lane', [PaperInfo('Times', '1234567'), HasStandard]),
+  HouseInfo(16, 'Gordon Road', [PaperInfo('Mail', '1234567'), HasStandard]),
+  HouseInfo(24, 'Gordon Road', [PaperInfo('Mail', '123456'), HasStandard]),
+  HouseInfo(57, 'Gordon Road', [PaperInfo('Mail', '1234567'), PaperInfo('I', '123456'), HasStandard]),
+  HouseInfo(20, 'Gordon Way', [PaperInfo('Telegraph', '123457'), PaperInfo('Mail', '6')]),
+  HouseInfo(14, 'Richmond Cresent', PaperInfo('Mail', '123456')),
+  HouseInfo(23, 'Richmond Cresent', [PaperInfo('Anglian', '6'), HasStandard]),
+  HouseInfo(10, 'Queens Road', [PaperInfo('Mail', '1234567'), HasStandard]),
+  HouseInfo(34, 'Laurel Avenue', [PaperInfo('Sun', '1234567'), HasStandard]),
+  HouseInfo(66, 'Long Meadows', [PaperInfo('Sun', '1234567'), HasStandard]),
+  HouseInfo(41, 'Goodlake Close', [PaperInfo('Mail', '123456'), PaperInfo('I', '123456'), HasStandard]),
+  HouseInfo(15, 'Bexley Close', [PaperInfo('Sun', '1234567'), HasStandard])
+], order = [
+  OrderInfo(5,              'Wick Lane'),
+  OrderInfo('New Bungalow', 'Hall Lane'),
+  OrderInfo('Olde Barn',    'Hall Lane'),
+  OrderInfo(20,             'Gordon Way'),
+  OrderInfo(57,             'Gordon Road'),
+  OrderInfo(23,             'Richmond Cresent'),
+  OrderInfo(14,             'Richmond Cresent'),
+  OrderInfo(24,             'Gordon Road'),
+  OrderInfo(16,             'Gordon Road'),
+  OrderInfo(10,             'Queens Road'),
+  OrderInfo(6,              'Hall Lane'),
+  OrderInfo(34,             'Laurel Avenue'),
+  OrderInfo(41,             'Goodlake Close'),
+  OrderInfo(66,             'Long Meadows'),
+  OrderInfo(15,             'Bexley Close')
+])
+NonesenseRound='A utterly useless entry in the input file'
